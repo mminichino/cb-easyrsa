@@ -1,0 +1,47 @@
+# ignore compiled byte code
+target
+
+# ignore output files from testing
+output*
+workloads/*.dat
+workload*.dat
+data-load.dat
+*.debug
+test.py
+
+# ignore standard Eclipse files
+.project
+.classpath
+.settings
+.checkstyle
+
+# ignore standard IntelliJ files
+.idea/
+*.iml
+*.ipr
+*.iws
+venv/
+venv.OLD/
+venv.HOLD/
+cbvenv/
+setup.log
+
+# ignore standard Vim and Emacs temp files
+*.swp
+*~
+
+# ignore standard Mac OS X files/dirs
+.DS_Store
+
+# igniore git in nested packages
+*/.git
+
+# easy-rsa
+easyrsa3/pki
+easyrsa3/unit-tests-temp
+easyrsa-unit-tests.sh
+easyrsa3/vars
+dist-staging
+easyrsa3/safessl-easyrsa.cnf
+testdeps/*
+shellcheck
