@@ -28,6 +28,6 @@ cp pki/ca.crt $HOME/tls/ca.crt
 cp pki/private/couchbase-server.key $HOME/tls/tls.key
 cp pki/issued/couchbase-server.crt $HOME/tls/tls.crt
 
-kubectl create secret generic cbos-tls --from-file $HOME/tls/tls.crt --from-file $HOME/tls/tls.key --from-file $HOME/tls/ca.crt -n cbdemo
+kubectl create secret generic cbos-tls --from-file $HOME/tls/tls.crt --from-file $HOME/tls/tls.key --from-file $HOME/tls/ca.crt -n ${NAMESPACE}
 
 ##
